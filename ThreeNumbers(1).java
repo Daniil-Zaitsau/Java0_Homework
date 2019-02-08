@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class ThreeNumbers {
     public static void main(String[] args) throws IOException {
-        System.out.println("Input three numbers");
+        System.out.println("Enter three numbers");
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int numA = Integer.parseInt(reader.readLine());

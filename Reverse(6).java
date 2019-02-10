@@ -9,10 +9,8 @@ public class Кумукыу {
 
         System.out.println("Enter the number");
         String num = reader.readLine();
-
-        char[] arr = num.toCharArray();
-
-       if(arr.length != 7){
+        
+       if(num.length() != 7){
             System.out.println("The number should consist of seven digits!");
         }else {
            StringBuilder sbf = new StringBuilder(num);

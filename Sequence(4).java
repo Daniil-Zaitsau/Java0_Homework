@@ -10,18 +10,18 @@ public class Sequence {
         String num = reader.readLine();
 
         char[] arr = num.toCharArray();
-        int count1 = 0, count2 = 0;
+        int count = 0;
 
         if(arr.length != 4){
             System.out.println("The number should consist of four digits!");
         }else {
             for (int i = 0; i < 3; i++) {
-                if (arr[i] < arr[i + 1]) count1++;
-                if (arr[i] > arr[i + 1]) count2++;
+                if (arr[i] < arr[i + 1]) count++;
+                if (arr[i] > arr[i + 1]) count--;
             }
-            if(count1 == 3) System.out.println("increasing sequence");
+            if(count == 3) System.out.println("increasing sequence");
                 else
-                     if(count2 == 3) System.out.println("decreasing sequence");
+                     if(count == -3) System.out.println("decreasing sequence");
                          else
                              System.out.println("Not sorted");
         }

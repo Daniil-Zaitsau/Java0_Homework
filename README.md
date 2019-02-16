@@ -1,2 +1,2 @@
-# Homework1
-first java task 
+# Homework
+java tasks 

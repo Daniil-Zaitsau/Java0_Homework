@@ -13,7 +13,7 @@ public class Circles {
         double R2 = Double.parseDouble(reader.readLine());
 
         if(R2>R1){
-            System.out.println("The first radius should be greater then second!");
+            System.out.println("The first radius should be greater than second!");
         } else{
             System.out.println("The area is " + Double.toString(Math.PI*R1*R1 - Math.PI*R2*R2));
         }

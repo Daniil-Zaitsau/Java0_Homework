@@ -13,9 +13,10 @@ public class ThreeNumbers {
 
         if(numA != numB && numB != numC && numA != numC){
             System.out.println("All numbers are different");
-        }else
-            if(numA == numB && numB == numC){
-                System.out.println("All numbers are equals");
-            }else System.out.println("Two numbers from three are equals");
+        }else if(numA == numB && numB == numC){
+            System.out.println("All numbers are equals");
+        }else{
+            System.out.println("Two numbers from three are equals");
+        }
     }
 }

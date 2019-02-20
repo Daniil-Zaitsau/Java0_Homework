@@ -12,7 +12,7 @@ public class Frendly {
         if(first > last){
             System.out.println("Incorrect input");
         }else {
-            for (int k = first; k <= last; k+=4){      //все друж. числа делятся на 4
+            for (int k = first; k <= last; k++){     
                 for (int j = k+1; j <= last; j++){
                     if(dividers(k) == j && dividers(j) == k){
                         System.out.println(k + " " + j);

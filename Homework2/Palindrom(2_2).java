@@ -21,7 +21,7 @@ public class Palindrom {
             System.out.println(strBuild(num) ? "Is palindrom.\n" : "It isn't palindrom.\n");
 
             System.out.println("Second method:");
-            System.out.println(palindrom(num) ? "Is palindrom.\n" : "It isn't palindrom.\n");
+            System.out.println(palindrom(num) ? "Is palindrom.\n" : "It isn't palindrom.");
         }
     }
 

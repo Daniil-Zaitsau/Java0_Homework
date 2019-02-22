@@ -18,7 +18,9 @@ public class Simple {
             int count = 1;
 
             for (int i = 1; i <= num/2; i++) {
-                if (num % i == 0) count++;
+                if (num % i == 0){
+                    count++;
+                }
             }
 
             if (count == 2) {

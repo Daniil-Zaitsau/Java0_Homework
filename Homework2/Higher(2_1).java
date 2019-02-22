@@ -13,18 +13,20 @@ public class Higher {
             System.exit(0);
         }
 
-        num = Math.abs(num);
-        int max = 0;
+        if (num <= 0){
+            System.out.println("Isn't natural number.");
+        } else{
+            int max = 0;
 
-        while (num > 0){
-            int n = num % 10;
-            num/=10;
+            while (num > 0){
+                int n = num % 10;
+                num/=10;
 
-            if(n > max){
-                max = n;
+                if(n > max){
+                    max = n;
+                }
             }
+            System.out.println("Higher point is: " + max);
         }
-
-        System.out.println("Higher point is: " + max);
     }
 }

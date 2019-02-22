@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JavaTasks {
+public class Palindrom {
 
     public static void main(String[] args)   {
         Scanner scanner = new Scanner(System.in);
@@ -39,7 +39,6 @@ public class JavaTasks {
                 isPalin = false;
             }
         }
-
         return isPalin;
     }
 }

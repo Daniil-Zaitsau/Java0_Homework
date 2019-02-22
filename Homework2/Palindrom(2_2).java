@@ -8,20 +8,21 @@ public class Palindrom {
 
         int num = 0;
         try {
-             num = scanner.nextInt();
+            num = scanner.nextInt();
         } catch (Exception e){
             System.out.println("Please, enter correct number.");
             System.exit(0);
         }
 
-        num = Math.abs(num);
+        if (num <= 0){
+            System.out.println("Isn't natural number.");
+        } else{
+            System.out.println("First method:");
+            System.out.println(strBuild(num) ? "Is palindrom.\n" : "It isn't palindrom.\n");
 
-        System.out.println("First method:");
-        System.out.println(strBuild(num) ? "Is palindrom.\n" : "It isn't palindrom.\n");
-
-        System.out.println("Second method:");
-        System.out.println(palindrom(num) ? "Is palindrom.\n" : "It isn't palindrom.\n");
-
+            System.out.println("Second method:");
+            System.out.println(palindrom(num) ? "Is palindrom.\n" : "It isn't palindrom.\n");
+        }
     }
 
     private static boolean strBuild(int num){

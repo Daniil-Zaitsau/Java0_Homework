@@ -1,9 +1,9 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class JavaTasks {
+public class Matrix {
 
-    public static void Matrix(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int row = 0;
         int column = 0;

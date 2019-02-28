@@ -1,5 +1,3 @@
-package JavaNull;
-
 public class Logic {
 
     // Определяет минимум и максимум

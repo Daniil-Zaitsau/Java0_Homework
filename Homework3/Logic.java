@@ -1,3 +1,5 @@
+package JavaNull;
+
 public class Logic {
 
     // Определяет минимум и максимум
@@ -96,15 +98,27 @@ public class Logic {
 
     // Транспонирует матрицу
     public static void transpon (double[][] arr){
-        for (int i = 0 ; i < arr.length; i++){
-            for (int k = i + 1 ; k < arr[i].length; k++) {
-                double temp = arr[i][k];
-                arr[i][k] = arr[k][i];
-                arr[k][i] = temp;
-            }
-        }
 
-        System.out.println("\nMatrix after transposition:");
-        JavaTasks.matrix(arr);
+        if (arr.length == arr[0].length) {
+            for (int i = 0; i < arr.length; i++) {
+                for (int k = i + 1; k < arr[i].length; k++) {
+                    double temp = arr[i][k];
+                    arr[i][k] = arr[k][i];
+                    arr[k][i] = temp;
+                }
+            }
+            System.out.println("\nMatrix after transposition:");
+            JavaTasks.matrix(arr);
+        } else {
+            double[][] newArr = new double[arr[0].length][arr.length];
+
+            for (int i = 0; i < arr.length; i++){
+                for (int k = 0; k < newArr.length; k++){
+                    newArr[k][i] = arr[i][k];
+                }
+            }
+            System.out.println("\nMatrix after transposition:");
+            JavaTasks.matrix(newArr);
+        }
     }
 }

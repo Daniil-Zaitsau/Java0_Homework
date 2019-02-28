@@ -15,6 +15,11 @@ public class JavaTasks {
             row = scanner.nextInt();
             column = scanner.nextInt();
 
+            if (row <= 0 || column <=0){
+                System.out.println("Incorrect input!");
+                System.exit(0);
+            }
+
             System.out.println("\nMatrix will create from random numbers in some range.");
 
             System.out.println("Enter start point of the range:");
@@ -22,12 +27,13 @@ public class JavaTasks {
 
             System.out.println("Enter finish point of the range:");
             rangeMax = scanner.nextDouble();
+
         } catch (Exception e){
             System.out.println("Incorrect input!");
             System.exit(0);
         }
 
-        if (rangeMin > rangeMax){
+        if (rangeMin > rangeMax) {
             System.out.println("Enter correct range!");
         } else {
             double[][] arr = new double[row][column];
@@ -63,4 +69,3 @@ public class JavaTasks {
         }
     }
 }
-

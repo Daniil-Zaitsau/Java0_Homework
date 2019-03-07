@@ -44,10 +44,11 @@ public class Box {
 
         int firstPoint = 0;
         int secondPoint = 1;
-        try (BufferedReader reader = new BufferedReader(
+        System.out.println("Enter file path:");
+        try (Scanner scanner = new Scanner(System.in);
+             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(
-                            new FileInputStream("D:\\Java\\mavenProject\\src\\file.txt")));
-             Scanner scanner = new Scanner(System.in))
+                            new FileInputStream(scanner.next()))))
         {
             CandyFactory create = new CandyFactory();
             reader.readLine();   //пропускает первую строчку файла (формат ввода данных в файл)

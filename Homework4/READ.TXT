@@ -1,4 +1,4 @@
-Подключен mave и log4j 
+Подключен maven и log4j 
 Все классы находятся в src->main->java->JNullOOP
 В папке src -> main -> resources находится файл логов
 В scr находится текстовый файл file.txt, с которого считывалиь данные

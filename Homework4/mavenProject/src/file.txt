@@ -1,7 +1,0 @@
-Format: Class, Name of product, weight, sugar, quantity;
-Bar Mars 10 6 3
-Chocolate Alpen Gold 30 4 5
-Bar Snickers 10 5 6
-Chocolate Schogetten 5 5 2
-Candy Ameri 4 4 1
-Candy Zaini 5 5 4

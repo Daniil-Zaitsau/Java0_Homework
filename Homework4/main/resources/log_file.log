@@ -1,0 +1,9 @@
+2019-03-07 10:40:10 WARN  Box:76 - Incorrect input
+2019-03-07 10:40:45 WARN  Box:77 - Incorrect input
+2019-03-07 10:53:45 INFO  Box:18 - File wrong, incorrect input
+2019-03-07 19:27:26 WARN  Box:75 - Incorrect input
+2019-03-20 13:00:08 ERROR ReadFile:17 - java.io.FileNotFoundException: D:\Java\mavenProject\src\main\resources (Отказано в доступе)
+2019-03-20 13:01:04 ERROR ReadFile:39 - java.io.IOException: Stream closed
+2019-03-20 13:02:59 ERROR ReadFile:39 - java.io.IOException: Stream closed
+2019-03-20 13:03:27 ERROR ReadFile:39 - java.io.IOException: Stream closed
+2019-03-20 13:04:01 ERROR ReadFile:39 - java.io.IOException: Stream closed
